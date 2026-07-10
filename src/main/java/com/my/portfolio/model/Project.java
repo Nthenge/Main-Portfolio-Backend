@@ -22,6 +22,8 @@ public class Project {
     private String techStack;   // comma-separated, e.g. "Java, Kafka, PostgreSQL"
     private String highlight;   // short metric, e.g. "40ms avg response · 99.9% uptime"
 
+    private Boolean status;
+
     public Project() {}
 
     public Long getId() { return id; }
@@ -40,4 +42,12 @@ public class Project {
     public void setSortOrder(Integer sortOrder) { this.sortOrder = sortOrder; }
     public void setTechStack(String techStack) { this.techStack = techStack; }
     public void setHighlight(String highlight) { this.highlight = highlight; }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
+    }
 }
