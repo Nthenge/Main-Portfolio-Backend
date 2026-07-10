@@ -23,4 +23,9 @@ public class HealthController {
                 "timestamp", Instant.now().toString()
         );
     }
+
+    @GetMapping("/up")
+    public ResponseEntity<String> healthCheck() {
+        return ResponseEntity.ok("UP");
+    }
 }
