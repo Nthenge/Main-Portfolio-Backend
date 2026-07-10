@@ -26,4 +26,14 @@ public class AvailabilityController {
     public Map<String, Boolean> updateAvailability(@Valid @RequestBody AvailabilityRequest request) {
         return Map.of("available", service.updateAvailability(request.available()));
     }
+
+    @GetMapping("/yop")
+    public Long getYop() {
+        return service.getYop();
+    }
+
+    @GetMapping("/production-apis")
+    public Long getProductionApis() {
+        return service.getProductionApis();
+    }
 }

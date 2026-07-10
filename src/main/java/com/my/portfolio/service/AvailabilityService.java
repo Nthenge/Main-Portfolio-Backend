@@ -1,6 +1,5 @@
 package com.my.portfolio.service;
 
-
 import com.my.portfolio.model.Availability;
 import com.my.portfolio.repository.AvailabilityRepository;
 import org.springframework.stereotype.Service;
@@ -31,5 +30,17 @@ public class AvailabilityService {
                 });
         row.setAvailable(available);
         return repository.save(row).isAvailable();
+    }
+
+    public Long getYop() {
+        return repository.findById(SINGLETON_ID)
+                .map(Availability::getYop)
+                .orElse(0L);
+    }
+
+    public Long getProductionApis() {
+        return repository.findById(SINGLETON_ID)
+                .map(Availability::getProductionApis)
+                .orElse(0L);
     }
 }
