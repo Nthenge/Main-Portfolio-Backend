@@ -29,6 +29,7 @@ public class ProjectService {
         project.setSortOrder(request.sortOrder());
         project.setTechStack(request.techStack());
         project.setHighlight(request.highlight());
+        project.setSiteUrl(request.siteUrl());
         project.setStatus(true);
         return projectRepository.save(project);
     }
