@@ -18,6 +18,7 @@ public class Project {
 
     private String link;
     private Integer sortOrder;
+    private String siteUrl;
 
     private String techStack;   // comma-separated, e.g. "Java, Kafka, PostgreSQL"
     private String highlight;   // short metric, e.g. "40ms avg response · 99.9% uptime"
