@@ -9,5 +9,6 @@ public record ProjectRequest(
         String link,
         Integer sortOrder,
         String techStack,
-        String highlight
+        String highlight,
+        String siteUrl
 ) {}
