@@ -50,4 +50,12 @@ public class Project {
     public void setStatus(Boolean status) {
         this.status = status;
     }
+
+    public String getSiteUrl() {
+        return siteUrl;
+    }
+
+    public void setSiteUrl(String siteUrl) {
+        this.siteUrl = siteUrl;
+    }
 }
