@@ -36,7 +36,7 @@ public class BrevoEmailService {
                 <h3>New portfolio contact request</h3>
                 <p><b>Name:</b> %s</p>
                 <p><b>Email:</b> %s</p>
-                <p><b>Budget:</b> %s</p>
+                <p><b>Plan:</b> %s</p>
                 <p><b>Service:</b> %s</p>
                 <p><b>Description:</b><br/>%s</p>
                 """.formatted(req.name(), req.email(), req.budget(), req.service(), req.description());
@@ -50,7 +50,7 @@ public class BrevoEmailService {
             <p>Thanks for reaching out. I've received your message and will get back to you soon.</p>
             <p><b>Here's a copy of what you sent:</b></p>
             <p><b>Description:</b> %s</p>
-            <p><b>Budget:</b> %s</p>
+            <p><b>Plan:</b> %s</p>
             <p><b>Service:</b> %s</p>
             <img src="https://pixabay.com/get/g95a1e736bed64dcdba86f812b4daeb06975f41c45baa80cebb15bd2afd5f809943b1c6fd22958dc6790629d760c98b55_1920.png?longlived=" alt="Abraham Mutinda" width="160" style="display:block;margin:16px 0;" />
             <p>Regards,<br/> Abraham Mutinda</p>
